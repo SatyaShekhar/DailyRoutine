@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WIP Tasks</string>
+
+    <string-array name="countries">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>China</item>
+        <item>Belgium</item>
+        <item>France</item>
+        <item>UAE</item>
+        <item>Bangladesh</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

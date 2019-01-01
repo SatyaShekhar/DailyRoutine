@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="476dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerScheduleTaskMonth">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_item_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    <Spinner
+        android:id="@+id/spinnerScheduleTaskYear"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerScheduleTaskMonth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerScheduleTaskMonth"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerScheduleTaskWeek"
+        app:layout_constraintTop_toTopOf="@+id/spinnerScheduleTaskYear" />
+
+    <Spinner
+            android:id="@+id/spinnerScheduleTaskWeek"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonScheduleTaskAddNew"
+            app:layout_constraintTop_toTopOf="@+id/spinnerScheduleTaskYear" />
+
+    <Button
+            android:id="@+id/buttonScheduleTaskAddNew"
+            android:layout_width="33dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/image_single_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinnerScheduleTaskYear" />
+
+
+</android.support.constraint.ConstraintLayout>

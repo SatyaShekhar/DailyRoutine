@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_item_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <Button
+        android:id="@+id/dailyTaskViewPreviousButton"
+        android:layout_width="78dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/image_left_arrow"
+        android:tooltipText="Previous Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout2" />
+
+    <Button
+        android:id="@+id/dailyTaskViewAddNewButton"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/image_single_add"
+        app:layout_constraintEnd_toStartOf="@+id/dailyTaskViewSelectFromTemplateButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dailyTaskViewPreviousButton"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout2" />
+
+    <Button
+        android:id="@+id/dailyTaskViewSelectFromTemplateButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/image_multi_add"
+        android:tooltipText="Select from template"
+        app:layout_constraintEnd_toStartOf="@+id/dailyTaskViewNextButton"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout2" />
+
+    <Button
+        android:id="@+id/dailyTaskViewNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/image_right_arrow"
+        android:tooltipText="Next Day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout2" />
+
+    <TextView
+        android:id="@+id/dailyTaskViewDateAndStatusMessage"
+        android:layout_width="112dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="dd/mmm/yyy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyTaskViewAddNewButton" />
+
+
+</android.support.constraint.ConstraintLayout>
