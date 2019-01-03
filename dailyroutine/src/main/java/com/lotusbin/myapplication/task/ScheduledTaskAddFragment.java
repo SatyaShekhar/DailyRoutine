@@ -88,6 +88,12 @@ public class ScheduledTaskAddFragment extends Fragment {
 
                 Date startTimeAsDate = DailyAppConstants.getTimeAsDate(startDate, startTime);
                 scheduledTask.setStartTimeInLong(startTimeAsDate.getTime());
+
+                if(switchAddEventEnableNotificationId.isChecked()) {
+                    scheduledTask.setEnableNotification(true);
+                }
+
+
                 taskViewModel.insert(scheduledTask);
                 FragmentTransaction transaction = ((TabWithFrameActivity) getActivity()).getLocalCreatedFragmentManager().beginTransaction();
                 transaction.replace(R.id.our_frame_id, new ScheduledTaskViewFragment());

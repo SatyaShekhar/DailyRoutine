@@ -6,10 +6,11 @@ import android.arch.persistence.room.PrimaryKey;
 
 import com.lotusbin.myapplication.constants.NotificationTypes;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity(tableName = "SCHEDULED_TASK")
-public class ScheduledTask {
+public class ScheduledTask implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private int id;

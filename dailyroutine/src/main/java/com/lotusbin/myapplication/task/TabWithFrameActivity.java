@@ -17,7 +17,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.lotusbin.myapplication.MyNotificatinReceiver;
+import com.lotusbin.myapplication.alarm.MyNotificatinReceiver;
 import com.lotusbin.myapplication.R;
 import com.lotusbin.myapplication.TODOListFragment;
 import com.lotusbin.myapplication.jobs.DailyAppJobSchedulerService;
